@@ -114,9 +114,18 @@
 * {
   font-family: arial, "times new roman";
 }
+
+body {
+   margin: 10px 10px;
+}
+
+body * {
+   margin: 20px 0;
+}
+
 /* Title format */
 #index-title {
-  background-color: rgb(0,0,0,0);
+  background-color: rgb(0,0,0, 0);
   margin: 0 0 0 0;
 }
 #index-title h1 {
@@ -128,10 +137,34 @@
   color: #1a1f30;
 }
 
+/* Intro Style */
+.index-intro {
+   width: 100%;
+   height: auto;
+}
+
+.index-intro .index-portrait {
+   width: 125px;
+   height: 125px;
+   background-image: url(imgs/self-portrait.jpg);
+   background-size: 100%;
+   float: left;
+   margin: auto 10px auto auto;
+}
+
+.index-intro p {
+   display: inline;
+   font-size: 14px;
+}
+
+/* Core Skills Style */
+
+
+/* TBD */
+
 nav {
   width: 100%;
   height: 50px;
-  background-color: #eeeeee;
 }
 
 nav ul {
@@ -140,9 +173,11 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  display: inline-block;
+  display: block;
   float: left;
   line-height: 50px;
+  height: auto;
+  background-color: #6f6f74;
 }
 
 nav ul li a {
@@ -150,7 +185,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 14px;
   color: #1e1e1e;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 nav ul li a:hover {
@@ -161,7 +196,3 @@ nav ul li a:hover {
   color: #f55742;
 }
 
-/* Portrait format */
-#index-portrait {
-
-}
