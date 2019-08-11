@@ -158,7 +158,113 @@ body * {
 }
 
 /* Core Skills Style */
+.index-skills {
+   margin: auto;
+}
 
+.index-skills * {
+   margin: 5px 0;
+}
+
+.index-skills h2 {
+   display: block;
+}
+
+.index-skills p {
+   margin: auto auto auto 5px;
+}
+
+#index-c-skill *, #index-linux-skill *, #index-python-skill *, #index-altium-skill *, #index-html-skill *, #index-jscript-skill * {
+   display: inline-block;
+}
+
+.empty-star {
+   margin: -4px;
+}
+
+#index-c-skill .full-star:before {
+   content: "\2605\2605\2605\2605";
+   color: #f55742;
+   font-size: 14pt;
+   padding: 0;
+}
+
+#index-c-skill .empty-star:before {
+   content: "\2605";
+   color: #6f6f74;
+   font-size: 14pt;
+   padding: 0;
+}
+
+#index-linux-skill .full-star:before {
+   content: "\2605\2605\2605";
+   color: #f55742;
+   font-size: 14pt;
+   padding: 0;
+}
+
+#index-linux-skill .empty-star:before {
+   content: "\2605\2605";
+   color: #6f6f74;
+   font-size: 14pt;
+   padding: 0;
+}
+
+#index-python-skill .full-star:before {
+   content: "\2605\2605\2605";
+   color: #f55742;
+   font-size: 14pt;
+   padding: 0;
+}
+
+#index-python-skill .empty-star:before {
+   content: "\2605\2605";
+   color: #6f6f74;
+   font-size: 14pt;
+   padding: 0;
+}
+
+#index-altium-skill .full-star:before {
+   content: "\2605\2605\2605";
+   color: #f55742;
+   font-size: 14pt;
+   padding: 0;
+}
+
+#index-altium-skill .empty-star:before {
+   content: "\2605\2605";
+   color: #6f6f74;
+   font-size: 14pt;
+   padding: 0;
+}
+
+#index-html-skill .full-star:before {
+   content: "\2605\2605";
+   color: #f55742;
+   font-size: 14pt;
+   padding: 0;
+}
+
+#index-html-skill .empty-star:before {
+   content: "\2605\2605\2605";
+   color: #6f6f74;
+   font-size: 14pt;
+   padding: 0;
+}
+
+#index-jscript-skill .full-star:before {
+   content: "\2605";
+   color: #f55742;
+   font-size: 14pt;
+   padding: 0;
+}
+
+#index-jscript-skill .empty-star:before {
+   content: "\2605\2605\2605\2605";
+   color: #6f6f74;
+   font-size: 14pt;
+   padding: 0;
+}
 
 /* TBD */
 
