@@ -178,7 +178,7 @@ body * {
    display: inline-block;
 }
 
-.empty-star {
+/* .empty-star {
    margin: -4px;
 }
 
@@ -264,6 +264,34 @@ body * {
    color: #6f6f74;
    font-size: 14pt;
    padding: 0;
+} */
+
+td div {
+   width: 100px;
+   height: 10px;
+}
+
+span {
+   background-color: aqua;
+   display: block;
+   width: 100%;
+}
+
+.progress-bar {
+   background-color: #1e1e1e;
+   border-radius: 14pt;
+   width: 75%px;
+   height: 12pt;
+   display: inline-block;
+}
+
+.progress-bar div {
+   background-color: limegreen;
+   width: 80%;
+   height: 100%;
+   border-radius: 14pt;
+   display: inline-block;
+   margin: 0;
 }
 
 /* TBD */
