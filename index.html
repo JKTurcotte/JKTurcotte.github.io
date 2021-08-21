@@ -1,122 +1,61 @@
 <!DOCTYPE html>
-
-<!--
-	JUSTIN TURCOTTE - PORTFOLIO
- 	BY: JUSTIN TURCOTTE
-
-	Index Page:
-		- menu at top middle
-		- social media links to the right (linkedIn)
-		- TBD
--->
-
-<html>
+<html lang="en">
 	<head>
 		<title> Justin Turcotte - Portfolio </title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css">
+
+		<!-- Bootstrap & Stylesheet Links -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	</head>
 		
 	<body>
-		<!-- Title -->
-		<div id="index-title">
-				<h1>Justin Turcotte's Portfolio!</h1>
-		</div>
-
-		<!-- Menu -->
-		<!-- <nav>
-			<ul>
-				<li>
-					<a href="#" id="current-menu">Home</a>
-					<a href="profile.html">Profile</a>
-					<a href="skills.html">Skills</a>
-					<a href="work_samples.html">Work Samples</a>
-					<a href="education_training.html">Education & Training</a>
-					<a href="resume_cover_letter.html">Resume & Cover Letter</a>
-				</li>
-			</ul>
-		</nav> -->
-
-		<!-- Self Portrait & Intro -->
-		<div class="index-intro">
-			<p>
-				<div class="index-portrait"></div> Hey, I'm an Electronic Systems Engineering student aspiring to become an Engineer. I'm excited for future opportunities in the Engineering and Software Development fields! I look forward to working with you!
-			</p>
-		</div>
-
-		<!-- Core Skills -->
-
-		<table>
-			<tHead>
-				<th>Core Skills</th>
-			</tHead>
-			<tbody>
-				<tr>
-					<td>C/C++</td>
-					<td>
-						<div>
-							<span></span>
-						</div>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<!-- <div class="index-skills">
-			<h2>Core Skills</h2>
-			<div id="index-c-skill">
-				<p>C/C++</p>
-				<div class="full-star"></div>
-				<div class="empty-star"></div>
-				<div class="progress-bar">
-					<div></div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="imgs/logo.png" alt="Justin's Logo" height="75">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Portfolio</a> 
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+						<h2>Hey, I'm Justin! </h2>
+						<h2>I obtained a Bachelors in Electronic Systems Engineering<br \>from Conestoga College in the Kitchener-Waterloo area.</h2>
+						<h2>It's so nice to meet you!</h2>
 				</div>
 			</div>
-			<div id="index-linux-skill">
-				<p>Linux</p>
-				<div class="full-star"></div>
-				<div class="empty-star"></div>
+			<div class="row">
+				<h1>Project carousel here</h1>
 			</div>
-			<div id="index-python-skill">
-				<p>Python</p>
-				<div class="full-star"></div>
-				<div class="empty-star"></div>
-			</div>
-			<div id="index-altium-skill">
-				<p>Altium</p>
-				<div class="full-star"></div>
-				<div class="empty-star"></div>
-			</div>
-			<div id="index-html-skill">
-				<p>HTML/CSS</p>
-				<div class="full-star"></div>
-				<div class="empty-star"></div>
-			</div>
-			<div id="index-jscript-skill">
-				<p>Java Script</p>
-				<div class="full-star"></div>
-				<div class="empty-star"></div>
-			</div>
-		</div> -->
-
-		<!-- More Info -->
-		<div class="index-more">
-			<div class="index-resume">
-				<h2>Resume</h2>
-			</div>
-
-			<div class="index-experience">
-				<h2>Experience</h2>
-			</div>
-
-			<div class="index-merits">
-				<h2>Merits</h2>
-			</div>
-
-			<div class="contact">
-				<h2>About</h2>
+			<div class="row">
+				<div class="col-8">
+					<h1>About Me</h1>
+					<p>blah blah blah</p>
+				</div>
+				<div class="col-4">
+					<img src="imgs/self-portrait.jpg" alt="Justin's Portrait" height=10%>
+				</div>
 			</div>
 		</div>
+		
+		<!-- Bootstrap JS & Dependencies Bundle -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	</body>
 </html>
