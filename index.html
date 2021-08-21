@@ -7,13 +7,15 @@
 
 		<!-- Bootstrap & Stylesheet Links -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<!-- CSS Stylesheet -->
+		<link rel="stylesheet" href="style.css">
 	</head>
 		
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-dark">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
-					<img src="imgs/logo.png" alt="Justin's Logo" height="75">
+					<img src="imgs/logo.png" alt="Justin's Logo" class="d-block menu-logo">
 				</a>
 			</div>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +27,7 @@
 						<a class="nav-link active" aria-current="page" href="#">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Portfolio</a> 
+						<a class="nav-link" href="#">Portfolio</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Contact</a>
@@ -33,27 +35,84 @@
 				</ul>
 			</div>
 		</nav>
-		<div class="container">
-			<div class="row">
+		<div class="container my-5">
+			<div class="row w-75 mx-auto my-5">
 				<div class="col text-center">
-						<h2>Hey, I'm Justin! </h2>
-						<h2>I obtained a Bachelors in Electronic Systems Engineering<br \>from Conestoga College in the Kitchener-Waterloo area.</h2>
-						<h2>It's so nice to meet you!</h2>
+						<p id="home-intro-text">Hey, I'm <b>Justin!</b> <br />
+							I obtained a Bachelors in Electronic Systems Engineering
+							from Conestoga College in the Kitchener-Waterloo area. <br />
+							It's so nice to meet you!
+						</p>
 				</div>
 			</div>
-			<div class="row">
-				<h1>Project carousel here</h1>
+			<div class="row w-25 mx-auto my-5">
+				<div id="carouselFeatured" class="carousel slide carousel-dark" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselFeatured" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselFeatured" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselFeatured" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<a href="#"><img src="imgs/temp.png" class="d-block w-100 mx-auto"></a>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Project 1</h5>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<a href="#"><img src="imgs/temp.png" class="d-block w-100 mx-auto"></a>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Project 2</h5>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<a href="#"><img src="imgs/temp.png" class="d-block w-100 mx-auto"></a>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Project 3</h5>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselFeatured" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselFeatured" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
 			</div>
-			<div class="row">
+			<div class="row my-5">
 				<div class="col-8">
 					<h1>About Me</h1>
-					<p>blah blah blah</p>
+					<p>
+						Hi! My name is Justin Turcotte. I am a newly graduated student who obtained a Bachelors degree in Electronic Systems Engineering from Conestoga College.
+						I'm familiar with embedded systems and have personally worked with Nucleo boards, Arduino, and Raspberry Pi for various projects. Although I was taught
+						embedded programming in C, I have personally been expanding my skillset to encompass a wider field such as: object oriented programming, 
+						web development (this website for example), game development, and algorithms. Please feel free to take a look at the various projects I've posted here. 
+						They will all have an associated github link. There will also be appropriate demonstration images or videos when possible. Also feel free to click the 
+						buttons below to download a copy of my resume and/or cover letter.
+					</p>
+					<a class="btn btn-primary home-downloads" href="docs/cover-letter.pdf" role="button">Cover Letter</a>
+					<a class="btn btn-primary home-downloads" href="docs/resume.pdf" role="button">Resume</a>
 				</div>
 				<div class="col-4">
-					<img src="imgs/self-portrait.jpg" alt="Justin's Portrait" height=10%>
+					<img src="imgs/self-portrait.jpg" alt="Justin's Portrait" class="d-block w-100 mx-auto">
 				</div>
 			</div>
 		</div>
+		<footer>
+			<div class="container-fluid">
+				<div class="row py-1">
+					<div class="col me-auto my-auto">
+						Justin Keith Turcotte
+					</div>
+					<div class="col-auto">
+						<a href="https://www.linkedin.com/in/justin-turcotte/"><img src="imgs/linkedin.ico" alt="Linkedin Link Icon"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
 		
 		<!-- Bootstrap JS & Dependencies Bundle -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

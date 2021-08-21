@@ -1,0 +1,56 @@
+@font-face
+{
+  font-family: 'Muli';
+  src:  url('fonts/Mulish/Mulish-VariableFont_wght.ttf') format('woff2'),
+        url('fonts/Mulish/Mulish-VariableFont_wght.ttf') format('woff'),
+        url('fonts/Mulish/Mulish-VariableFont_wght.ttf') format('truetype');
+}
+
+.navbar
+{
+  background-color: #495867;
+}
+
+.nav-link
+{
+  font-family: 'Muli';
+  font-size: 125%;
+}
+
+div.col
+{
+  font-family: 'Muli';
+}
+
+#home-intro-text
+{
+  font-size: 32px;
+}
+
+h1, p
+{
+  font-family: "Muli";
+}
+
+h1, b
+{
+  color: #495867;
+}
+
+.home-downloads
+{
+  background-color: #495867;
+  border-color: #495867;
+}
+
+footer
+{
+  font-family: 'Muli';
+  background-color: #495867;
+  color: white;
+}
+
+.menu-logo
+{
+  width: 5%;
+}
