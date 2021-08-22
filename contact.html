@@ -59,37 +59,37 @@
         </div>
       </div>
       <div class="row w-50 mx-auto">
-        <form>
+        <form method="post" action="contact.php" id="contact">
           <div class="row">
             <div class="col-sm-12 col-md-6">
               <label for="firstName" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="firstName" aria-describedby="firstNameHelp" placeholder="Justin">
+              <input type="text" class="form-control" id="firstName" name="firstName" aria-describedby="firstNameHelp" placeholder="Justin">
               <div id="firstNameHelp" class="form-text">Your first name if you want to add it.</div>
             </div>
             <div class="col-sm-12 col-md-6">
               <label for="lastName" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="lastName" aria-describedby="lastNameHelp" placeholder="Turcotte">
+              <input type="text" class="form-control" id="lastName" name="lastName" aria-describedby="lastNameHelp" placeholder="Turcotte">
               <div id="lastNameHelp" class="form-text">Your last name if you want to add it.</div>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="justin@kturcotte.me">
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="justin@kturcotte.me">
               <div id="emailHelp" class="form-text">Your email is only used to send your message to me. You can also contact me manually at justin@kturcotte.me.</div>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label for="subject" class="form-label">Subject</label>
-              <input type="text" class="form-control" id="subject" aria-describedby="subjectHelp" placeholder="Thank You">
+              <input type="text" class="form-control" id="subject" name="subject" aria-describedby="subjectHelp" placeholder="Thank You">
               <div id="subjectHelp" class="form-text">Subject of the email message.</div>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="5" placeholder="Thank you for visiting my site! I look forward to hearing from you!"></textarea>
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Thank you for visiting my site! I look forward to hearing from you!"></textarea>
             </div>
           </div>
           <button type="submit" class="btn btn-primary contact-submit">Submit</button>
