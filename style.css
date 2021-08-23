@@ -27,12 +27,12 @@ div.col
   font-size: 32px;
 }
 
-h1, h2, h3, h4, h5, p
+h1, h2, h3, h4, h5, p, figcaption
 {
   font-family: "Muli";
 }
 
-h1, b
+h1, h5, b
 {
   color: #495867;
 }
@@ -55,7 +55,8 @@ footer
   width: 8%;
 }
 
-.portfolio-category
+img.portfolio-img
 {
-  font-size: 50px;
+  height: 200px;
+  object-fit: contain;
 }
