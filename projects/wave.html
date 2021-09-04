@@ -43,20 +43,23 @@
 
 		<div class="container my-5">
 			<div class="row">
+				<div class="col-12 d-flex justify-content-center my-3 text-center">
+					<h1>WAVE Project</h1>
+				</div>
+			</div>
+
+			<div class="row">
 				<div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
 					<h1>Status</h1>
 				</div>
 
 				<div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end my-auto">
-					<h5>August 2021 - September 2021</h5>
+					<h5>January 2021 - August 2021</h5>
 				</div>
 
 				<div class="col">
 					<p>
-						This is an independent project I decided to pursue in order to create a place for my work that others will be able to see. 
-						My resume can only contain surface level details. I'm hoping this site can help provide more information to those who are curious. 
-						Also this serves as a record for me to reference later. Due to the nature of this, the site will be updated over time but 
-						the initial project of building the site is complete.
+						This group project is currently paused, while I do want to continue working on it, there are other priorities that need tending to.
 					</p>
 				</div>
 			</div>
@@ -68,31 +71,43 @@
 
 				<div class="col-6 col-md-4">
 					<ul>
-						<li>HTML</li>
+						<li>Python</li>
 					</ul>
 				</div>
 
 				<div class="col-6 col-md-4">
 					<ul>
-						<li>CSS</li>
+						<li>PCB Design</li>
 					</ul>
 				</div>
 
 				<div class="col-6 col-md-4">
 					<ul>
-						<li>JavaScript</li>
+						<li>Soldering</li>
 					</ul>
 				</div>
 
 				<div class="col-6 col-md-4">
 					<ul>
-						<li>PHP</li>
+						<li>ESC/POS</li>
 					</ul>
 				</div>
 
 				<div class="col-6 col-md-4">
 					<ul>
-						<li>Bootstrap</li>
+						<li>Altium</li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-md-4">
+					<ul>
+						<li>CUPS</li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-md-4">
+					<ul>
+						<li>Raspberry Pi</li>
 					</ul>
 				</div>
 			</div>
@@ -104,10 +119,19 @@
 
 				<div class="col">
 					<p>
-						This project demonstrates various skills such as website design. While I did not create the artistic aspect of this website, 
-						credit to <a href="https://kdesigns15.wixsite.com/portfolio">Kirsten Slugoski</a> for that, I did handle all technical aspects except hosting. Hosting is done by a third party. 
-						Augmented by Bootstrap, I used appropriate HTML, CSS, JavaScript, and PHP to actualize the design of the website and bring it to life.
+						WAVE was my college capstone project, the final project of engineering course at Conestoga College. 
+						Teamed up with two classmates, we came up with WAVE: a replacement for paper receipts. 
+						Using NFC (Near-field communication), we devised a way to receive receipts digitally.
 					</p>
+
+					<p>
+						The below video is a semi-comedic elevator pitch of sorts, outlining what we aim to accomplish with WAVE. 
+						There are also additional resources and documentation at the end of the page. 
+						Also feel free to contact me at justin@kturcotte.me if you have any questions or want to get in touch.
+					</p>
+					<div class="d-flex justify-content-center my-2">
+						<iframe src="https://www.youtube.com/embed/_rBCC7k05oE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 
@@ -118,19 +142,81 @@
 
 				<div class="col">
 					<p>
-						Before jumping into the code, I first took a good look at the design that was given to me and I read through some of the Bootstrap documentation. 
-						My goal was to re-familiarize myself with the tools I was going to be using. 
-						Bootstrap is really handy when it comes to organizing the website layout and was a huge help.
+						We divided WAVE into three primary components: the mobile application responsible for helping customers manage their receipts, 
+						the NFC Transceiver Interface responsible for transmitting the receipt from the POS terminal to the mobile phone, 
+						and the POS Switch Interface responsible for directing the receipt to the NFC Transceiver or Thermal Printer.
+					</p>
+					<div class="d-flex justify-content-center my-2">
+						<img src="/imgs/wave-fig-1.png" alt="WAVE System Components" class="col-12 col-md-8 col-lg-4">
+					</div>
+
+					<p>
+						I was responsible for the POS Switch Interface. This component was important because it's responsible for receiving the receipt from the POS (Point of Sale) 
+						software and directing it to the NFC Transceiver Interface. Our prototype used a Raspberry Pi that was setup to act as a pdf printer. The POS software is 
+						setup to print to this Raspberry Pi through the local network. When the Pi detects a receipt it first reads the status of a physical switch. The state of 
+						the switch determines if the receipt will be paper or digital. Preserving the paper option is important in case  customers do not wish to have a digital 
+						receipt or are unable to access their phone. In the event of a paper receipt, the Raspberry Pi converts the pdf receipt into ESC/POS compatible format and 
+						prints to an attached thermal printer. In the event of a digital receipt, the pdf receipt is copied over to the local storage of the attached NFC Transceiver 
+						Interface, and is prepped for NFC transfer. 
+					</p>
+					<div class="d-flex justify-content-center my-2">
+						<img src="/imgs/wave-fig-2.png" alt="WAVE System Flow" class="col-12 col-lg-10">
+					</div>
+
+					<p>
+						The physical switch circuit used in determining whether a receipt will be printed or sent digitally was designed in altium as a breakout board to fit 
+						over the GPIO header of the Raspberry Pi.
+					</p>
+					<div class="d-flex justify-content-center my-2">
+						<img src="/imgs/wave-fig-3.png" alt="WAVE Switch Circuit" class="col-12 col-lg-10">
+					</div>
+
+					<p>
+						The switch circuit gives the GPIO pin a high or a low based on the position of a switch. It's essentially a toggle between a voltage divider and a 
+						short to ground. The resistors were calculated to keep current within specifications while also ensuring the voltage difference was enough to differentiate 
+						between high and low states.
+					</p>
+
+					<p>
+						Here's a quick demo of the POS Switch Interface:
+					</p>
+					<div class="d-flex justify-content-center my-2">
+						<iframe src="https://www.youtube.com/embed/qXKvb0ORoqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+
+					<p>
+						Here is an additional image showing the Raspberry Pi and breakout circuit:
+					</p>
+					<div class="d-flex justify-content-center my-2">
+						<img src="/imgs/wave-fig-4.png" alt="WAVE Raspberry Pi & Breakout Board" class="col-12 col-md-8 col-lg-4">
+					</div>
+
+					<p>
+						Unfortunately the NFC Transceiver Interface had some complications and NFC transfer of a PDF file was not accomplished. The NFC Transceiver Interface used 
+						a Raspberry Pi Pico setup in a way that allowed it to act like a flash storage device, making it easy for the POS Interface to copy the receipt over. 
+						It also managed communication with an NFC chip used to send the receipt to the mobile device. Large file transfers have not been accomplished yet.
 					</p>
 					<p>
-						When I first attempted to design the website, I did not think about the mobile-first design philosophy. 
-						As a result, I created a website that looked quite decent on your average desktop but was quite ugly on mobile. 
-						To fix this, I went back and re-designed each page for mobile, then adjusted the layout to fit medium sized devices (like an iPad), 
-						and finally adjusted once more for large devices (like a desktop).
+						Similarly, the mobile device component also had some complications. A rough application was created that could open PDF files and NFC communication is 
+						currently a bit of a mystery since we don't have the NFC Transceiver Interface ready for testing.
 					</p>
 					<p>
-						With the portfolio complete, it will be relatively easy for me to add future work to this site which is awesome. 
-						It was definitely a good learning experience and I am much more comfortable with the tools I used.
+						While this project is currently not complete, I have plans with one of my classmates to continue working on this project. 
+						As the status changes, I'll update this page. 
+					</p>
+					<p>
+						Going forward, there are a couple of changes we are contemplating. In the case of the NFC transfer, we are considering using the NFC communication to 
+						establish a bluetooth connection between the customers mobile device and the WAVE system. This would allow us to transfer the receipt at a faster rate. 
+					</p>
+					<p>
+						Another consideration is that since the POS Switch Interface is connected via local network, it would ideally be connected via ethernet. 
+						In the event that the connection is Wi-fi, we would need to consider encryption. Using Bluetooth also means we would need to consider encrypting the 
+						receipt data. This isn't an issue for NFC communications due to the distance limitation of NFC.
+					</p>
+					<p>
+						Finally, we also want consider our receipt format. PDF is proprietary and hard to modify. Fortunately with Python, I was able to use a library to extract 
+						the receipt text when needed, but this isn't a perfect system and doesn't allow me to extract images for example. Going forward, an advanced library would 
+						need to be developed or a new format for the receipt would need to be considered.
 					</p>
 				</div>
 			</div>
@@ -141,7 +227,11 @@
 				</div>
 
 				<div class="col d-flex justify-content-center justify-content-md-start">
-					<a href="https://github.com/JKTurcotte/JKTurcotte.github.io" class="border border-2"><img src="/imgs/github.ico" alt="Github Link Icon" class="d-inline link-icons mx-1">Portfolio Github</a>
+					<a href="https://github.com/koolohms/splitter" class="border border-2"><img src="/imgs/github.ico" alt="Github Link Icon" class="d-inline link-icons mx-1">Code Base</a>
+				</div>
+
+				<div class="col-12 d-flex justify-content-center justify-content-md-start my-2">
+					<a class="btn btn-primary home-downloads" href="/docs/wave-report.pdf" role="button">Project Report</a>
 				</div>
 			</div>
     </div>
