@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face
 {
   font-family: 'Muli';
@@ -6,6 +7,9 @@
         url('fonts/Mulish/Mulish-VariableFont_wght.ttf') format('truetype');
 }
 
+/* Mobile first for if the viewport is at least extra small */
+
+/* Navigation bar */
 .navbar
 {
   background-color: #495867;
@@ -17,6 +21,8 @@
   font-size: 125%;
 }
 
+/* ------------------ */
+
 div.col
 {
   font-family: 'Muli';
@@ -24,7 +30,7 @@ div.col
 
 #home-intro-text
 {
-  font-size: 32px;
+  font-size: 6vw;
 }
 
 h1, h2, h3, h4, h5, p, figcaption
@@ -52,7 +58,7 @@ footer
 
 .menu-logo
 {
-  width: 8%;
+  width: 10%;
 }
 
 img.portfolio-img
@@ -71,4 +77,32 @@ img.contact-icon
 {
   height: 75px;
   object-fit: contain;
+}
+
+/* If the viewport is at least medium */
+@media screen and (min-width: 768px) {
+  
+  #home-intro-text
+  {
+    font-size: 4vw;
+  }
+
+  img.portfolio-img
+  {
+    height: 300px;
+  }
+}
+
+/* If the viewport is at least large */
+@media screen and (min-width: 992px) {
+  
+  #home-intro-text
+  {
+    font-size: 2vw;
+  }
+
+  #w-custom
+  {
+    widt: 50% !important;
+  }
 }

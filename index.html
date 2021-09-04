@@ -12,10 +12,10 @@
 	</head>
 		
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark">
+		<nav class="navbar navbar-expand-md navbar-dark">
 			<div class="container-fluid">
 				<div class="col">
-					<a class="navbar-brand" href="#">
+					<a class="navbar-brand" href="index.html">
 						<img src="imgs/logo.png" alt="Justin's Logo" class="d-inline-block align-text-center menu-logo">
 					</a>
 				</div>
@@ -26,7 +26,7 @@
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
+								<a class="nav-link active" aria-current="page" href="index.html">Home</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -39,6 +39,7 @@
 				</div>
 			</div>
 		</nav>
+
 		<div class="container my-5">
 			<div class="row w-75 mx-auto my-5">
 				<div class="col text-center">
@@ -49,7 +50,7 @@
 						</p>
 				</div>
 			</div>
-			<div class="row w-25 mx-auto my-5">
+			<div class="row mx-auto my-5">
 				<div id="carouselFeatured" class="carousel slide carousel-dark" data-bs-ride="carousel">
 					<div class="carousel-indicators">
 						<button type="button" data-bs-target="#carouselFeatured" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -86,40 +87,50 @@
 					</button>
 				</div>
 			</div>
-			<div class="row my-5">
-				<div class="col-8">
+			
+			<div class="row text-center text-md-start">
+				<div class="col-12">
 					<h1>About Me</h1>
-					<p>
-						Hi! My name is Justin Turcotte. I am a newly graduated student who obtained a Bachelors degree in Electronic Systems Engineering from Conestoga College.
-						I'm familiar with embedded systems and have personally worked with Nucleo boards, Arduino, and Raspberry Pi for various projects. Although I was taught
-						embedded programming in C, I have personally been expanding my skillset to encompass a wider field such as: object oriented programming, 
-						web development (this website for example), game development, and algorithms. Please feel free to take a look at the various projects I've posted here. 
-						They will all have an associated github link. There will also be appropriate demonstration images or videos when possible. Also feel free to click the 
-						buttons below to download a copy of my resume and/or cover letter.
-					</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12">
+					<div class="clearfix">
+						<img src="imgs/self-portrait.jpg" alt="Justin's Portrait" class="col-6 col-lg-4 float-end">
+						<p>
+							Hi! My name is Justin Turcotte. I am a newly graduated student who obtained a Bachelors degree in Electronic Systems Engineering from Conestoga College.
+							I'm familiar with embedded systems and have personally worked with Nucleo boards, Arduino, and Raspberry Pi for various projects. Although I was taught
+							embedded programming in C, I have personally been expanding my skillset to encompass a wider field such as: object oriented programming, 
+							web development (this website for example), game development, and algorithms. Please feel free to take a look at the various projects I've posted here. 
+							They will all have an associated github link. There will also be appropriate demonstration images or videos when possible. Also feel free to click the 
+							buttons below to download a copy of my resume and/or cover letter.
+						</p>
+					</div>
+				</div>
+				
+				<div class="col col-md-12 text-center text-md-start order-md-3">
 					<a class="btn btn-primary home-downloads" href="docs/cover-letter.pdf" role="button">Cover Letter</a>
 					<a class="btn btn-primary home-downloads" href="docs/resume.pdf" role="button">Resume</a>
 				</div>
-				<div class="col-4">
-					<img src="imgs/self-portrait.jpg" alt="Justin's Portrait" class="d-block w-100 mx-auto">
-				</div>
 			</div>
 		</div>
+
 		<footer>
 			<div class="container-fluid">
 				<div class="row py-2">
-					<div class="col-auto me-auto my-auto">
-						Implemented by Justin Keith Turcotte
+					<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center my-auto">
+						<p class="my-auto">Implemented by Justin Keith Turcotte</p>
 					</div>
-					<div class="col me-auto my-auto">
-						<a href="https://kdesigns15.wixsite.com/portfolio"><img src="imgs/kdesigns-logo.png" alt="Kirsten Slugoski's logo link to website" class="d-inline my-auto link-icons"></a>
-						Credit to Kirsten Slugoski for the Website Design
+					
+					<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center my-auto py-2">
+						<a href="https://kdesigns15.wixsite.com/portfolio"><img src="imgs/kdesigns-logo.png" alt="Kirsten Slugoski's logo link to website" class="d-inline link-icons"></a>
+						<p class="my-auto">Web Design: Kirsten Slugoski</p>
 					</div>
-					<div class="col-auto">
-						<a href="https://www.linkedin.com/in/justin-turcotte/"><img src="imgs/linkedin.ico" alt="Linkedin Link Icon" class="d-block my-auto link-icons"></a>
-					</div>
-					<div class="col-auto">
-						<a href="https://github.com/loki-games"><img src="imgs/github.ico" alt="Github Link Icon" class="d-block my-auto link-icons"></a>
+
+					<div class="col d-flex justify-content-center my-md-3">
+						<a href="https://www.linkedin.com/in/justin-turcotte/"><img src="imgs/linkedin.ico" alt="Linkedin Link Icon" class="d-inline link-icons"></a>
+						<a href="https://github.com/loki-games"><img src="imgs/github.ico" alt="Github Link Icon" class="d-inline link-icons"></a>
 					</div>
 				</div>
 			</div>
