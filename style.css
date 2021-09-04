@@ -33,12 +33,12 @@ div.col
   font-size: 6vw;
 }
 
-h1, h2, h3, h4, h5, p, figcaption
+h1, h2, h3, h4, h5, p, figcaption, li
 {
   font-family: "Muli";
 }
 
-h1, h5, b
+h1, h2, h3, h4, h5, b, a
 {
   color: #495867;
 }
@@ -91,6 +91,12 @@ img.contact-icon
   {
     height: 300px;
   }
+
+  iframe
+  {
+    height: 300px;
+    width: 75%;
+  }
 }
 
 /* If the viewport is at least large */
@@ -101,8 +107,9 @@ img.contact-icon
     font-size: 2vw;
   }
 
-  #w-custom
+  iframe
   {
-    widt: 50% !important;
+    height: 350px;
+    width: 50%;
   }
 }
