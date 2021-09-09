@@ -1,6 +1,12 @@
 <?php
 
-mail("justin@kturcotte.me", $_POST['subject'], $_POST['message']. "From: ". $_POST['firstName']. " ". $_POST['lastName']. ",". $_POST['email']);
+$subject = $_POST['subject'];
+$message = $_POST['message'];
+$firstName = $_POST['firstName'];
+$lastName = $_POST['lastName'];
+$email = $_POST['email'];
 
-readfile('index.html');
+mail("justin@kturcotte.me", $subject, $message . "\nFrom: " . $firstName . " " . $lastName . "," . $email);
+
+readfile($_SERVER['DOCUMENT_ROOT'] . '/index.php');
 ?>

@@ -10,37 +10,36 @@
     <!-- Bootstrap & Stylesheet Links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
 
   <body>
-		<nav class="navbar navbar-expand-md navbar-dark">
-			<div class="container-fluid">
-				<div class="col">
-					<a class="navbar-brand" href="/index.html">
-						<img src="imgs/logo.png" alt="Justin's Logo" class="d-inline-block align-text-center menu-logo">
-					</a>
-				</div>
-				<div>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon d-inline-block"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="/index.html">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active" href="/portfolio.html">Portfolio</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="/contact.html">Contact</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+              <img src="/imgs/logo.png" alt="Justin's Logo" class="d-inline menu-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/projects/">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact/">Contact</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+    </header>
 
     <div class="container my-5">
       <!-- OK this is where projects will be listed -->
@@ -54,19 +53,19 @@
         </div>
         <div class="col-12 col-md-6 text-center my-2 my-md-0 border border-3">
           <figure>
-            <a href="/projects/web-portfolio.html"><img src="/imgs/web-portfolio-caption.png" alt="Web Site Portfolio" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
+            <a href="portfolio/"><img src="imgs/web-portfolio-caption.png" alt="Web Site Portfolio" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
             <figcaption><b>Web Site Portfolio: A way to demonstrate & expand my skillset.</b></figcaption>
           </figure>
         </div>
         <div class="col-12 col-md-6 text-center my-2 my-md-0 border border-3">
           <figure>
-            <a href="/projects/remote-elevator.html"><img src="/imgs/remote-elevator-caption.png" alt="Remote Elevator Control System" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
+            <a href="ese/elevator/"><img src="imgs/remote-elevator-caption.png" alt="Remote Elevator Control System" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
             <figcaption><b>Remote Elevator Control System: Control an elevator from the web.</b></figcaption>
           </figure>
         </div>
         <div class="col-12 col-md-6 text-center my-2 my-md-0 border border-3">
           <figure>
-            <a href="/projects/coded-messaging.html"><img src="/imgs/coded-messaging-caption.png" alt="Coded Messaging System" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
+            <a href="ese/cms/"><img src="imgs/coded-messaging-caption.png" alt="Coded Messaging System" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
             <figcaption><b>Coded Messaging System: Send compressed messages through UART.</b></figcaption>
           </figure>
         </div>
@@ -78,44 +77,28 @@
         </div>
         <div class="col-12 col-md-6 text-center my-2 my-md-0 border border-3">
           <figure>
-            <a href="/projects/wave.html"><img src="/imgs/wave-caption.png" alt="WAVE Project" class="d-block w-100 mx-auto img-responsive portfolio-img"></a>
+            <a href="ese/wave/"><img src="imgs/wave-caption.png" alt="WAVE Project" class="d-block w-100 mx-auto img-responsive portfolio-img"></a>
             <figcaption><b>WAVE: The modern replacement for paper receipts.</b></figcaption>
           </figure>
         </div>
         <div class="col-12 col-md-6 text-center my-2 my-md-0 border border-3">
           <figure>
-            <a href="/projects/anb.html"><img src="/imgs/anb-caption.png" alt="Anti-Nail Biting Device" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
+            <a href="ese/anb/"><img src="imgs/anb-caption.png" alt="Anti-Nail Biting Device" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
             <figcaption><b>Anti-Nail Biting Device: A new method to stop nail biting.</b></figcaption>
           </figure>
         </div>
         <div class="col-12 col-md-6 text-center my-2 my-md-0 border border-3">
           <figure>
-            <a href="/projects/robot.html"><img src="/imgs/robot-caption.png" alt="Wireless Robot Project" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
+            <a href="ese/robot/"><img src="imgs/robot-caption.png" alt="Wireless Robot Project" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
             <figcaption><b>Wireless Robot Project: Gamepad controlled robot that connects via WiFi.</b></figcaption>
           </figure>
         </div>
       </div>
     </div>
 
-		<footer>
-			<div class="container-fluid">
-				<div class="row py-2">
-					<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center my-auto">
-						<p class="my-auto">Implemented by Justin Keith Turcotte</p>
-					</div>
-					
-					<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center my-auto py-2">
-						<a href="https://kdesigns15.wixsite.com/portfolio"><img src="/imgs/kdesigns-logo.png" alt="Kirsten Slugoski's logo link to website" class="d-inline link-icons"></a>
-						<p class="my-auto">Web Design: Kirsten Slugoski</p>
-					</div>
-
-					<div class="col d-flex justify-content-center my-md-3">
-						<a href="https://www.linkedin.com/in/justin-turcotte/"><img src="/imgs/linkedin.ico" alt="Linkedin Link Icon" class="d-inline link-icons"></a>
-						<a href="https://github.com/JKTurcotte"><img src="/imgs/github.ico" alt="Github Link Icon" class="d-inline link-icons"></a>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<?php 
+      require($_SERVER['DOCUMENT_ROOT'] . '/html/footer.html'); 
+    ?>
     
     <!-- Bootstrap JS & Dependencies Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

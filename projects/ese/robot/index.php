@@ -9,37 +9,13 @@
 		<!-- Bootstrap & Stylesheet Links -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<!-- CSS Stylesheet -->
-		<link rel="stylesheet" href="/style.css">
+		<link rel="stylesheet" href="/css/style.css">
 	</head>
 		
 	<body>
-		<nav class="navbar navbar-expand-md navbar-dark">
-			<div class="container-fluid">
-				<div class="col">
-					<a class="navbar-brand" href="/index.html">
-						<img src="/imgs/logo.png" alt="Justin's Logo" class="d-inline-block align-text-center menu-logo">
-					</a>
-				</div>
-				<div>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon d-inline-block"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="/index.html">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="/portfolio.html">Portfolio</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="/contact.html">Contact</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
+		<?php 
+      require($_SERVER['DOCUMENT_ROOT'] . '/html/header.html'); 
+    ?>
 
 		<div class="container my-5">
 			<div class="row">
@@ -124,7 +100,7 @@
 					</p>
 
 					<div class="d-flex justify-content-center my-2">
-						<img src="/imgs/robot-fig-1.png" alt="Robot Image" class="col-12 col-md-6 col-lg-3">
+						<img src="imgs/robot-fig-1.png" alt="Robot Image" class="col-12 col-md-6 col-lg-3">
 					</div>
 				</div>
 			</div>
@@ -143,7 +119,7 @@
 					</p>
 
 					<div class="d-flex justify-content-center my-2">
-						<img src="/imgs/robot-fig-2.png" alt="Robot Control Board Design" class="col-12 col-lg-10">
+						<img src="imgs/robot-fig-2.png" alt="Robot Control Board Design" class="col-12 col-lg-10">
 					</div>
 
 					<p>
@@ -186,38 +162,22 @@
 				</div>
 
 				<div class="col-12 d-flex justify-content-center justify-content-md-start my-2">
-					<a class="btn btn-primary home-downloads" href="/docs/robot-report.pdf" role="button">Project Report</a>
+					<a class="btn btn-primary home-downloads" href="docs/robot-report.pdf" role="button">Project Report</a>
 				</div>
 
 				<div class="col-12 d-flex justify-content-center justify-content-md-start my-2">
-					<a class="btn btn-primary home-downloads" href="/docs/robot-board-design.pdf" role="button">Control Board Design</a>
+					<a class="btn btn-primary home-downloads" href="docs/robot-board-design.pdf" role="button">Control Board Design</a>
 				</div>
 
 				<div class="col-12 d-flex justify-content-center justify-content-md-start my-2">
-					<a class="btn btn-primary home-downloads" href="/docs/robot-functional-requirements.pdf" role="button">Functional Requirements</a>
+					<a class="btn btn-primary home-downloads" href="docs/robot-functional-requirements.pdf" role="button">Functional Requirements</a>
 				</div>
 			</div>
     </div>
 
-		<footer>
-			<div class="container-fluid">
-				<div class="row py-2">
-					<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center my-auto">
-						<p class="my-auto">Implemented by Justin Keith Turcotte</p>
-					</div>
-					
-					<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center my-auto py-2">
-						<a href="https://kdesigns15.wixsite.com/portfolio"><img src="/imgs/kdesigns-logo.png" alt="Kirsten Slugoski's logo link to website" class="d-inline link-icons"></a>
-						<p class="my-auto">Web Design: Kirsten Slugoski</p>
-					</div>
-
-					<div class="col d-flex justify-content-center my-md-3">
-						<a href="https://www.linkedin.com/in/justin-turcotte/"><img src="/imgs/linkedin.ico" alt="Linkedin Link Icon" class="d-inline link-icons"></a>
-						<a href="https://github.com/JKTurcotte"><img src="/imgs/github.ico" alt="Github Link Icon" class="d-inline link-icons"></a>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<?php 
+      require($_SERVER['DOCUMENT_ROOT'] . '/html/footer.html'); 
+    ?>
 		
 		<!-- Bootstrap JS & Dependencies Bundle -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
