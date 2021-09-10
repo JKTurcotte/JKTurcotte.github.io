@@ -59,19 +59,19 @@
 					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<a href="projects/ese/wave/"><img src="projects/imgs/wave-caption.png" class="d-block w-100 mx-auto portfolio-img"></a>
+							<a href="projects/ese/wave/"><img src="projects/imgs/wave-caption.jpg" class="d-block w-100 mx-auto portfolio-img"></a>
 							<div class="carousel-caption d-none">
 								<h5>WAVE: Paper receipt alternative.</h5>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<a href="projects/portfolio/"><img src="projects/imgs/web-portfolio-caption.png" class="d-block w-100 mx-auto portfolio-img"></a>
+							<a href="projects/portfolio/"><img src="projects/imgs/web-portfolio-caption.jpg" class="d-block w-100 mx-auto portfolio-img"></a>
 							<div class="carousel-caption d-none">
 								<h5>Web Portfolio: A website to showcase my abilities.</h5>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<a href="projects/ese/cms/"><img src="projects/imgs/coded-messaging-caption.png" class="d-block w-100 mx-auto portfolio-img"></a>
+							<a href="projects/ese/cms/"><img src="projects/imgs/coded-messaging-caption.jpg" class="d-block w-100 mx-auto portfolio-img"></a>
 							<div class="carousel-caption d-none">
 								<h5>Coded Messaging System: Compressed transmission through UART.</h5>
 							</div>

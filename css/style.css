@@ -2,9 +2,9 @@
 @font-face
 {
   font-family: 'Muli';
-  src:  local('file:///fonts/Mulish/Mulish-VariableFont_wght.ttf') format('woff2'),
-        local('file:///fonts/Mulish/Mulish-VariableFont_wght.ttf') format('woff'),
-        local('file:///fonts/Mulish/Mulish-VariableFont_wght.ttf') format('truetype');
+  src:  url('fonts/Mulish/Mulish-VariableFont_wght.ttf') format('woff2'),
+        url('fonts/Mulish/Mulish-VariableFont_wght.ttf') format('woff'),
+        url('fonts/Mulish/Mulish-VariableFont_wght.ttf') format('truetype');
 }
 
 /* Mobile first for if the viewport is at least extra small */
