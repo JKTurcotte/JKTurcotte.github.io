@@ -100,7 +100,7 @@
 					</p>
 
 					<div class="d-flex justify-content-center my-2">
-						<img src="imgs/robot-fig-1.png" alt="Robot Image" class="col-12 col-md-6 col-lg-3">
+						<img src="imgs/robot-fig-1.jpg" alt="Robot Image" class="col-12 col-md-6 col-lg-3">
 					</div>
 				</div>
 			</div>
@@ -119,7 +119,7 @@
 					</p>
 
 					<div class="d-flex justify-content-center my-2">
-						<img src="imgs/robot-fig-2.png" alt="Robot Control Board Design" class="col-12 col-lg-10">
+						<img src="imgs/robot-fig-2.jpg" alt="Robot Control Board Design" class="col-12 col-lg-10">
 					</div>
 
 					<p>

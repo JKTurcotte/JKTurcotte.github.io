@@ -115,7 +115,7 @@
 						A SQL database would be updated based on the inputs and that database was used as a reference to keep track of the elevators location 
 						as well as hold commands that the elevator would then execute. A Raspberry Pi was used to host the website and control the elevator.
 					</p>
-					<img src="imgs/elevator-project-state-diagram.jpeg" alt="Elevator Project State Diagram" class="col-12">
+					<img src="imgs/elevator-project-state-diagram.jpg" alt="Elevator Project State Diagram" class="col-12">
 				</div>
 			</div>
 

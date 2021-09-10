@@ -106,12 +106,12 @@
 							They will all have an associated github link. There will also be appropriate demonstration images or videos when possible. Also feel free to click the 
 							buttons below to download a copy of my resume and/or cover letter.
 						</p>
+
+            <div class="col col-md-12 text-center text-md-start order-md-3">
+              <a class="btn btn-primary home-downloads" href="docs/cover-letter.pdf" role="button">Cover Letter</a>
+              <a class="btn btn-primary home-downloads" href="docs/resume.pdf" role="button">Resume</a>
+            </div>
 					</div>
-				</div>
-				
-				<div class="col col-md-12 text-center text-md-start order-md-3">
-					<a class="btn btn-primary home-downloads" href="docs/cover-letter.pdf" role="button">Cover Letter</a>
-					<a class="btn btn-primary home-downloads" href="docs/resume.pdf" role="button">Resume</a>
 				</div>
 			</div>
 		</div>

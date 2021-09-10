@@ -101,7 +101,7 @@
 						An RS-232 connection was made between the host PC and a FSK modulator and demodulator. This allowed the message to be transmitted to other users. 
 					</p>
 					<div class="d-flex justify-content-center">
-						<img src="imgs/cms-fig-1.png" alt="Coded Messaging System Main Menu" class="col-12 col-md-8 col-lg-4">
+						<img src="imgs/cms-fig-1.jpg" alt="Coded Messaging System Main Menu" class="col-12 col-md-8 col-lg-4">
 					</div>
 				</div>
 			</div>
@@ -120,14 +120,14 @@
 						The software flow can be found below.
 					</p>
 					<div class="d-flex justify-content-center">
-						<img src="imgs/cms-fig-2.png" alt="Coded Messaging System Software Flow" class="col-12 col-md-10 col-lg-6">
+						<img src="imgs/cms-fig-2.jpg" alt="Coded Messaging System Software Flow" class="col-12 col-md-10 col-lg-6">
 					</div>
 
 					<p>
 						We also had to design a circuit that would modify the square-wave going to the FSK modulator. We needed to adjust the voltage range from 0V - 5V to 2.4 - 2.6V.
 					</p>
 					<div class="d-flex justify-content-center">
-						<img src="imgs/cms-fig-3.png" alt="Coded Messaging System Voltage Divider" class="col-12 col-md-8 col-lg-4">
+						<img src="imgs/cms-fig-3.jpg" alt="Coded Messaging System Voltage Divider" class="col-12 col-md-8 col-lg-4">
 					</div>
 				</div>
 			</div>

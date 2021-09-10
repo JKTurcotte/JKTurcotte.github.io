@@ -114,7 +114,7 @@
 					</p>
 
 					<div class="d-flex justify-content-center my-2">
-						<img src="imgs/anb-fig-1.png" alt="ANB System Overview" class="col-12 col-md-10 col-lg-6">
+						<img src="imgs/anb-fig-1.jpg" alt="ANB System Overview" class="col-12 col-md-10 col-lg-6">
 					</div>
 				</div>
 			</div>
@@ -140,7 +140,7 @@
 					</p>
 
 					<div class="d-flex justify-content-center my-2">
-						<img src="imgs/anb-fig-2.png" alt="ANB Buzzer Circuit" class="col-12 col-md-10 col-lg-6">
+						<img src="imgs/anb-fig-2.jpg" alt="ANB Buzzer Circuit" class="col-12 col-md-10 col-lg-6">
 					</div>
 
 					<p>
@@ -172,7 +172,7 @@
 					</p>
 
 					<div class="d-flex justify-content-center my-2">
-						<img src="imgs/anb-fig-3.png" alt="ANB Buzzer Circuit" class="col-6 col-md-4 col-lg-2">
+						<img src="imgs/anb-fig-3.jpg" alt="ANB Buzzer Circuit" class="col-6 col-md-4 col-lg-2">
 					</div>
 
 					<p>

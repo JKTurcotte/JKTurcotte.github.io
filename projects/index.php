@@ -53,19 +53,19 @@
         </div>
         <div class="col-12 col-md-6 text-center my-2 my-md-0 border border-3">
           <figure>
-            <a href="portfolio/"><img src="imgs/web-portfolio-caption.png" alt="Web Site Portfolio" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
+            <a href="portfolio/"><img src="imgs/web-portfolio-caption.jpg" alt="Web Site Portfolio" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
             <figcaption><b>Web Site Portfolio: A way to demonstrate & expand my skillset.</b></figcaption>
           </figure>
         </div>
         <div class="col-12 col-md-6 text-center my-2 my-md-0 border border-3">
           <figure>
-            <a href="ese/elevator/"><img src="imgs/remote-elevator-caption.png" alt="Remote Elevator Control System" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
+            <a href="ese/elevator/"><img src="imgs/remote-elevator-caption.jpg" alt="Remote Elevator Control System" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
             <figcaption><b>Remote Elevator Control System: Control an elevator from the web.</b></figcaption>
           </figure>
         </div>
         <div class="col-12 col-md-6 text-center my-2 my-md-0 border border-3">
           <figure>
-            <a href="ese/cms/"><img src="imgs/coded-messaging-caption.png" alt="Coded Messaging System" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
+            <a href="ese/cms/"><img src="imgs/coded-messaging-caption.jpg" alt="Coded Messaging System" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
             <figcaption><b>Coded Messaging System: Send compressed messages through UART.</b></figcaption>
           </figure>
         </div>
@@ -77,19 +77,19 @@
         </div>
         <div class="col-12 col-md-6 text-center my-2 my-md-0 border border-3">
           <figure>
-            <a href="ese/wave/"><img src="imgs/wave-caption.png" alt="WAVE Project" class="d-block w-100 mx-auto img-responsive portfolio-img"></a>
+            <a href="ese/wave/"><img src="imgs/wave-caption.jpg" alt="WAVE Project" class="d-block w-100 mx-auto img-responsive portfolio-img"></a>
             <figcaption><b>WAVE: The modern replacement for paper receipts.</b></figcaption>
           </figure>
         </div>
         <div class="col-12 col-md-6 text-center my-2 my-md-0 border border-3">
           <figure>
-            <a href="ese/anb/"><img src="imgs/anb-caption.png" alt="Anti-Nail Biting Device" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
+            <a href="ese/anb/"><img src="imgs/anb-caption.jpg" alt="Anti-Nail Biting Device" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
             <figcaption><b>Anti-Nail Biting Device: A new method to stop nail biting.</b></figcaption>
           </figure>
         </div>
         <div class="col-12 col-md-6 text-center my-2 my-md-0 border border-3">
           <figure>
-            <a href="ese/robot/"><img src="imgs/robot-caption.png" alt="Wireless Robot Project" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
+            <a href="ese/robot/"><img src="imgs/robot-caption.jpg" alt="Wireless Robot Project" class="d-block w-100 mx-auto my-2 img-responsive portfolio-img"></a>
             <figcaption><b>Wireless Robot Project: Gamepad controlled robot that connects via WiFi.</b></figcaption>
           </figure>
         </div>

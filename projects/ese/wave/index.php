@@ -123,7 +123,7 @@
 						and the POS Switch Interface responsible for directing the receipt to the NFC Transceiver or Thermal Printer.
 					</p>
 					<div class="d-flex justify-content-center my-2">
-						<img src="imgs/wave-fig-1.png" alt="WAVE System Components" class="col-12 col-md-8 col-lg-4">
+						<img src="imgs/wave-fig-1.jpg" alt="WAVE System Components" class="col-12 col-md-8 col-lg-4">
 					</div>
 
 					<p>
@@ -136,7 +136,7 @@
 						Interface, and is prepped for NFC transfer. 
 					</p>
 					<div class="d-flex justify-content-center my-2">
-						<img src="imgs/wave-fig-2.png" alt="WAVE System Flow" class="col-12 col-lg-10">
+						<img src="imgs/wave-fig-2.jpg" alt="WAVE System Flow" class="col-12 col-lg-10">
 					</div>
 
 					<p>
@@ -144,7 +144,7 @@
 						over the GPIO header of the Raspberry Pi.
 					</p>
 					<div class="d-flex justify-content-center my-2">
-						<img src="imgs/wave-fig-3.png" alt="WAVE Switch Circuit" class="col-12 col-lg-10">
+						<img src="imgs/wave-fig-3.jpg" alt="WAVE Switch Circuit" class="col-12 col-lg-10">
 					</div>
 
 					<p>
@@ -164,7 +164,7 @@
 						Here is an additional image showing the Raspberry Pi and breakout circuit:
 					</p>
 					<div class="d-flex justify-content-center my-2">
-						<img src="imgs/wave-fig-4.png" alt="WAVE Raspberry Pi & Breakout Board" class="col-12 col-md-8 col-lg-4">
+						<img src="imgs/wave-fig-4.jpg" alt="WAVE Raspberry Pi & Breakout Board" class="col-12 col-md-8 col-lg-4">
 					</div>
 
 					<p>
