@@ -9,14 +9,35 @@
 		<!-- Bootstrap & Stylesheet Links -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<!-- CSS Stylesheet -->
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="/css/style.css">
 	</head>
 		
 	<body>
     <header>
-      <?php 
-        require('html/header.html'); 
-      ?>
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+              <img src="/imgs/logo.png" alt="Justin's Logo" class="d-inline menu-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/projects/">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact/">Contact</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
     </header>
 
 		<div class="container my-5">
@@ -38,19 +59,19 @@
 					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<a href="/projects/wave.html"><img src="/imgs/wave-caption.png" class="d-block w-100 mx-auto portfolio-img"></a>
+							<a href="projects/ese/wave/"><img src="projects/imgs/wave-caption.jpg" class="d-block w-100 mx-auto portfolio-img"></a>
 							<div class="carousel-caption d-none">
 								<h5>WAVE: Paper receipt alternative.</h5>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<a href="/projects/web-portfolio.html"><img src="/imgs/web-portfolio-caption.png" class="d-block w-100 mx-auto portfolio-img"></a>
+							<a href="projects/portfolio/"><img src="projects/imgs/web-portfolio-caption.jpg" class="d-block w-100 mx-auto portfolio-img"></a>
 							<div class="carousel-caption d-none">
 								<h5>Web Portfolio: A website to showcase my abilities.</h5>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<a href="/projects/coded-messaging.html"><img src="/imgs/coded-messaging-caption.png" class="d-block w-100 mx-auto portfolio-img"></a>
+							<a href="projects/ese/cms/"><img src="projects/imgs/coded-messaging-caption.jpg" class="d-block w-100 mx-auto portfolio-img"></a>
 							<div class="carousel-caption d-none">
 								<h5>Coded Messaging System: Compressed transmission through UART.</h5>
 							</div>
@@ -85,21 +106,19 @@
 							They will all have an associated github link. There will also be appropriate demonstration images or videos when possible. Also feel free to click the 
 							buttons below to download a copy of my resume and/or cover letter.
 						</p>
+
+            <div class="col col-md-12 text-center text-md-start order-md-3">
+              <a class="btn btn-primary home-downloads" href="docs/cover-letter.pdf" role="button">Cover Letter</a>
+              <a class="btn btn-primary home-downloads" href="docs/resume.pdf" role="button">Resume</a>
+            </div>
 					</div>
-				</div>
-				
-				<div class="col col-md-12 text-center text-md-start order-md-3">
-					<a class="btn btn-primary home-downloads" href="/docs/cover-letter.pdf" role="button">Cover Letter</a>
-					<a class="btn btn-primary home-downloads" href="/docs/resume.pdf" role="button">Resume</a>
 				</div>
 			</div>
 		</div>
 
-    <footer>
-      <?php 
-        require('html/footer.html'); 
-      ?>
-    </footer>
+    <?php 
+      require($_SERVER['DOCUMENT_ROOT'] . '/html/footer.html'); 
+    ?>
 		
 		<!-- Bootstrap JS & Dependencies Bundle -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
