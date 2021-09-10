@@ -123,7 +123,7 @@
 				</div>
 
 				<div class="col d-flex justify-content-center justify-content-md-start">
-					<a href="https://github.com/JKTurcotte/JKTurcotte.github.io" class="border border-2"><img src="/imgs/github.ico" alt="Github Link Icon" class="d-inline link-icons mx-1">Portfolio Github</a>
+					<a href="https://github.com/JKTurcotte/portfolio-website" class="border border-2"><img src="/imgs/github.ico" alt="Github Link Icon" class="d-inline link-icons mx-1">Portfolio Github</a>
 				</div>
 			</div>
     </div>
