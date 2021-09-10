@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -116,11 +120,35 @@
 			</div>
 		</div>
 
+		<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div id="submissionToast" class="toast" role="status" aria-live="polite" aria-atomic="true">
+        <div class="toast-header">
+          <strong>Thank You!</strong>
+          <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Thanks for contacting me! I'll get back to you as soon as I can.
+        </div>
+      </div>
+    </div>
+
     <?php 
       require($_SERVER['DOCUMENT_ROOT'] . '/html/footer.html'); 
     ?>
 		
 		<!-- Bootstrap JS & Dependencies Bundle -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
+		<?php
+		if(isset($_SESSION['contact']))
+		{
+			if($_SESSION['contact'])
+			{
+				echo("<script type='text/javascript' src='js/toast.js'></script>");
+				$_SESSION['contact'] = false;
+			}
+		}
+		?>
+
 	</body>
 </html>

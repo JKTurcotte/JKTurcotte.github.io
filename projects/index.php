@@ -42,6 +42,14 @@
     </header>
 
     <div class="container my-5">
+      <div class="row my-5">
+        <div class="col-12 text-center my-auto">
+          <p>
+            This page lists all the projects I have worked on. Feel free to click any of them for more information!
+          </p>
+        </div>
+      </div>
+
       <!-- OK this is where projects will be listed -->
       <!-- Categories wanted: Embedded, Front End, Algorithms, Game Development but for now I don't have enough projects for this -->
       <!-- For now we will go with: Software & Hardware categories -->
