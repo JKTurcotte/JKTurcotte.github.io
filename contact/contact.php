@@ -6,7 +6,7 @@ $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
 $email = $_POST['email'];
 
-mail("justin@kturcotte.me", $subject, $message . "\nFrom: " . $firstName . " " . $lastName . "," . $email);
+mail("justin@kturcotte.me", $subject, $message . "\nFrom: " . $firstName . " " . $lastName . ", " . $email);
 
-readfile($_SERVER['DOCUMENT_ROOT'] . '/index.php');
+header("Location: /");
 ?>
